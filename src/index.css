@@ -7,3 +7,25 @@
     margin: 0px;
     box-sizing: border-box;
 }
+.map-container {
+  width: 100%;
+}
+
+.map-box {
+  height: 400px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.map-title {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 10px;
+}

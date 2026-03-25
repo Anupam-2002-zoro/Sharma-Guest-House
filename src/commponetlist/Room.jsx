@@ -1,5 +1,6 @@
 import React from "react";
 import back10 from "../assets/12.jpeg";
+import toliat from "../assets/10.png";
 
 /* ══════════════════════════════════════
    PURE NORMAL CSS — TAILWIND NAHI HAI
@@ -336,23 +337,39 @@ const styles = `
     }
   }
 `;
-
 const rooms = [
   {
     title: "Deluxe Room",
     subtitle: "Aaram aur Sukoon ka Sangam",
-    features: ["King Size Bed", "AC & Geyser", "Free Wi-Fi", "24/7 Room Service", "City View Window"],
+    features: [
+      "King Size Bed",
+      "AC & Geyser",
+      "Free Wi-Fi",
+      "24/7 Room Service",
+      "Nearby to Railway Station",
+    ],
     price: "₹799",
+    Start:"starts form ",
     tag: "Most Popular",
+    book: "Book Now",
+    image: back10,
     flip: false,
   },
+ 
   {
-    title: "Premium Suite",
-    subtitle: "Luxury jo yaad rahe",
-    features: ["Attached Bathroom", "Smart TV", "Mini Fridge", "Daily Housekeeping", "Balcony View"],
-    price: "₹1,299",
-    tag: "Best Value",
-    flip: true,
+  title: "Premium Suite",
+subtitle: "Luxury jo yaad rahe",
+features: [
+  "Clean Attached Bathroom",
+  "Hot Water Available",
+  "Western Toilet",
+  "Daily Housekeeping",
+  "Hygienic Washroom",
+],
+tag: "Daily Cleaning Washroom",
+book:"try Now",
+image: toliat,
+flip: true,
   },
 ];
 
@@ -362,7 +379,6 @@ const Room = () => {
       <style>{styles}</style>
 
       <div className="room-root">
-
         {/* ── Section Heading ── */}
         <div className="room-heading">
           <span className="room-badge">Hamare Kamre</span>
@@ -373,18 +389,16 @@ const Room = () => {
         {/* ── Room Cards ── */}
         <div className="room-cards">
           {rooms.map((room, idx) => (
-            <div
-              key={idx}
-              className={`room-card${room.flip ? " flip" : ""}`}
-            >
+            <div key={idx} className={`room-card${room.flip ? " flip" : ""}`}>
               {/* Image Side */}
               <div className="room-image-wrap">
                 <div
                   className="room-image"
-                  style={{ backgroundImage: `url(${back10})` }}
+                  style={{ backgroundImage: `url(${room.image}) ` }}
                 >
                   <div className="room-price-badge">
-                    Starts from {room.price}<span>/night</span>
+                    {room.Start} {room.price}
+                  
                   </div>
                   <div className="room-tag-badge">{room.tag}</div>
                 </div>
@@ -406,7 +420,7 @@ const Room = () => {
                   ))}
                 </ul>
 
-                <button className="room-book-btn">Book Now →</button>
+                <button className="room-book-btn">{room.book}</button>
               </div>
             </div>
           ))}
@@ -416,19 +430,24 @@ const Room = () => {
         <div className="room-price-strip">
           <div>
             <p className="strip-label">Price Starts From</p>
-            <p className="strip-price">₹799 <span>/night</span></p>
+            <p className="strip-price">
+              ₹799 <span>/night</span>
+            </p>
           </div>
 
           <div className="strip-divider" />
 
           <div className="strip-includes">
             <p className="strip-label">Includes</p>
-            <p>Free Breakfast · Free Wi-Fi<br />24/7 Support · Easy Cancellation</p>
+            <p>
+              Free Breakfast · Free Wi-Fi
+              <br />
+              24/7 Support · Easy Cancellation
+            </p>
           </div>
 
-          <button className="strip-avail-btn">Check Availability</button>
+          <button className="strip-avail-btn"  >Check Availability</button>
         </div>
-
       </div>
     </>
   );

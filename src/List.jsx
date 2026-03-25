@@ -3,7 +3,7 @@ import bg from "./assets/bg.png";
 import Home from "./commponetlist/Home";
 import Room from "./commponetlist/Room";
 import Contact from "./commponetlist/Contact";
-
+import GoogleMap from "./commponetlist/GoogleMap";
 /* ══════════════════════════════════════
    PURE CSS — NO TAILWIND
 ══════════════════════════════════════ */
@@ -218,6 +218,7 @@ const List = () => {
       {/* ══════════════ PAGES ══════════════ */}
       <Home />
       <Room />
+      <GoogleMap />
       <Contact />
     </>
   );

@@ -304,11 +304,11 @@ const Contact = () => {
             <div className="col-title">Contact</div>
             <div className="contact-item">
               <span className="contact-icon">📍</span>
-              <span className="contact-text">12, Haveli Marg, Old City,<br />Jaipur, Rajasthan 302001</span>
+              <span className="contact-text"><br />Ringuss,railway Staition</span>
             </div>
             <div className="contact-item">
               <span className="contact-icon">📞</span>
-              <span className="contact-text">+91 98765 43210</span>
+              <span className="contact-text">+91 99831156</span>
             </div>
             <div className="contact-item">
               <span className="contact-icon">✉</span>
@@ -316,7 +316,7 @@ const Contact = () => {
             </div>
             <div className="contact-item">
               <span className="contact-icon">🕐</span>
-              <span className="contact-text">Check-in: 12:00 PM<br />Check-out: 11:00 AM</span>
+              <span className="contact-text">Check-in: 24 Time<br />Check-out: AnyTime</span>
             </div>
           </div>
 

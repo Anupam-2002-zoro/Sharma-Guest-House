@@ -4,6 +4,7 @@ import Home from "./commponetlist/Home";
 import Room from "./commponetlist/Room";
 import Contact from "./commponetlist/Contact";
 import GoogleMap from "./commponetlist/GoogleMap";
+import Roomdetails from "./commponetlist/Roomdetails";
 /* ══════════════════════════════════════
    PURE CSS — NO TAILWIND
 ══════════════════════════════════════ */
@@ -218,6 +219,7 @@ const List = () => {
       {/* ══════════════ PAGES ══════════════ */}
       <Home />
       <Room />
+        <Roomdetails />
       <GoogleMap />
       <Contact />
     </>
